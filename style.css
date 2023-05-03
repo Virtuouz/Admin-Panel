@@ -15,7 +15,7 @@
     --main-text-color:hsl(200, 10%, 50%);
     --primary-color:hsl(200, 77%, 60%);
     --primary-color-hover:hsl(195, 75%, 66%);
-    --primary-color-active:hsl(205, 85%, 57%);
+    --primary-color-active:hsl(203, 85%, 57%);
     --box-shadow:rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     --box-shadow-hover:rgba(103, 201, 233, 0.5) 0px 4px 16px, rgba(103, 201, 233, 0.5) 0px 8px 32px;    
     --box-shadow-active:rgba(52, 161, 239, 0.5) 0px 4px 16px, rgba(52, 161, 239, 0.5) 0px 8px 32px;                                                                                           
@@ -55,10 +55,7 @@ h3{
     align-self: center;
 }
 
-#search-bar:focus{
-    outline: none;
-    border-color: aqua;
-}
+
 
 #dashboard-search{
     border: 0px transparent;
@@ -70,6 +67,16 @@ h3{
 
 }
 
+#dashboard-search:focus{
+    outline: none;
+    border: 2px solid var(--primary-color-active);
+}
+
+#dashboard-search:hover{
+    outline: none;
+    border: 2px solid var(--primary-color-hover);
+}
+
 #search-bar::after{
     position: absolute;
     content: url(./Icons/magnify.svg);
@@ -78,7 +85,7 @@ h3{
 }
 
 .profile-picture{
-    height: 100px;
+    height: 90px;
     width: auto;
     display: inline;
     border-radius: 50%;
@@ -88,6 +95,10 @@ h3{
     padding-left: 5rem;
     display: flex;
     gap: 2rem;
+}
+
+.user-big p{
+    font-weight: 700;
 }
 
 .user-small{
