@@ -277,6 +277,7 @@ h3{
 }
 
 .announcement-card>ul{
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -312,6 +313,13 @@ h3{
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.trending-card ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .trending-card .profile-picture{
