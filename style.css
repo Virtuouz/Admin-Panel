@@ -16,7 +16,9 @@
     --primary-color:hsl(200, 77%, 60%);
     --primary-color-hover:hsl(195, 75%, 66%);
     --primary-color-active:hsl(205, 85%, 57%);
-    --box-shadow:rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;                                                                                                
+    --box-shadow:rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    --box-shadow-hover:rgba(103, 201, 233, 0.5) 0px 4px 16px, rgba(103, 201, 233, 0.5) 0px 8px 32px;    
+    --box-shadow-active:rgba(52, 161, 239, 0.5) 0px 4px 16px, rgba(52, 161, 239, 0.5) 0px 8px 32px;                                                                                           
 }
 ul{
     list-style: none;
@@ -197,12 +199,24 @@ h3{
     box-shadow: var(--box-shadow) ;
 }
 
+
+
 .card-text{
     color: var(--main-text-color);
 }
 .project-card{
     border-left:7px solid hsl(190, 50%, 50%);
     padding: 2rem;
+}
+
+.project-card:hover{
+    box-shadow: var(--box-shadow-hover);
+    /* outline: var(--primary-color-hover) solid 5px; */
+
+}
+
+.project-card:active{
+    box-shadow: var(--box-shadow-active);
 }
 
 
@@ -214,6 +228,23 @@ h3{
 .announcement-card{
     padding: 0px;   
     margin: 0px;
+    
+}
+
+.announcement-card>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.announcement-card h3{
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+}
+
+.announcement-card p{
+    margin-top: 2px;
+    font-size: .75rem;
 }
 
 .announce-heading{
@@ -230,4 +261,8 @@ h3{
     grid-row: 3/4;
     grid-column: 2/3;
 
+}
+
+.trending-card>h3{
+    font-size: 1rem;
 }
