@@ -46,6 +46,7 @@ h3{
     padding: 1rem;
     background-color: var(--light-background-color);
     box-shadow: var(--box-shadow);
+    position: relative;
 }
 
 #search-bar{
@@ -69,7 +70,12 @@ h3{
 
 }
 
-
+#search-bar::after{
+    position: absolute;
+    content: url(./Icons/magnify.svg);
+    height:2rem;
+    width:3rem;
+}
 
 .profile-picture{
     height: 100px;
